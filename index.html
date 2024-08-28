@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uthkal innovations</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styleAnnimation.css">
+    <!-- <link rel="stylesheet" href="styleMobile.css"> -->
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <ul>
+            <div id="none"><img src="images/uthkal1.png"  height="60vh" width="80vw">
+            </div> 
+            <li><a href="#home">HOME</a></li>
+            <li id="about">OUR WORK</li>
+            <li id="#contact">Contact</li>
+            <li id="#about">About</li>
+            <li href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;
+            </li>
+        </ul>
+     </div>
+    </header>
+
+     <section class="home">
+            <div class="row">
+              <div class="pipe"></div>
+                <div class="colm1">
+                   <h2>Uthkal Innovation</h2>
+                   <h3>We are here to light Your loved place</h3>
+                   <h4>Lets create home for you</h4>
+                   <button type="button">More about us</button>
+                </div>
+                <div class="colm2">
+                    <img src="images/image1.png" class="inoimage">
+                </div>
+            </div>
+           </section>
+
+           <section id="about"><div class="traial">
+            <center><p class="pro"><b>Our products</p></b></center>
+            <div class="container reveal">
+                <div class="inner-div" id="one"><img src="images/one.png" alt=""></div>
+                <div class="inner-div" id="two"><img src="images/two.png" alt=""></div>
+                <div class="inner-div" id="three"><img src="images/three.png" alt=""></div>
+                <div class="inner-div" id="four"><img src="images/tube.png" alt=""></div>
+                <div class="inner-div" id="five"><img src="images/four.png" alt=""></div>
+                <div class="inner-div"><img src="images/three.png" alt=""></div>
+                
+                   </div>
+                </div>
+           </section>
+<section>
+    <div class="blank">
+        <div class="logo">
+          <img src="images/uthkal1.png">
+          <p id="para1">UTHKAL INNOVATIONS</p>
+          <P id="para2">Light Your Place with brighter LED's</P>
+          <button id="contactButton">CONTACT US</button>
+          </div>
+      </div>
+</section>
+
+<section>
+           <div class="head">
+            <h1>About Us</h1>
+        </div>
+        <nav>
+            <a href="#story">STORY</a>
+            <a href="#mission">MISSION</a>
+            <a href="#quality">QUALITY</a>
+        </nav>
+    <div class="total">
+        <div class="page" id="story">
+        <div id="page1"class="slide slide1 reveal">
+            <h2>Our Story</h2>
+            <div class="page1">
+            <div class="image1">
+                <img src="images/team1.png" alt="Image 1"></div>
+            <p class="bandal">Welcome to Uthkal Innovation, where innovation meets illumination. We are a leading LED light company
+                committed to providing high-quality, energy-efficient lighting solutions. Our journey began with a vision
+                to revolutionize the lighting industry and make a positive impact on the environment.Join us on our journey towards a brighter, more sustainable future with LED lighting. Together, let's illuminate the world responsibly.
+            </p>
+        </div>
+        </div>
+        <div id="mission">
+        <div id="page2" class="slide slide2 reveal">
+            <h2>Our Mission</h2>
+            <div class="page2">
+            <p class="bandal1">At [Your Company Name], we strive to be at the forefront of LED technology. Our mission is to create
+                cutting-edge lighting products that not only enhance the visual appeal of spaces but also contribute to
+                sustainability. We believe in the power of light to transform environments and improve the quality of
+                life.</p>
+           <div class="image2"><img src="images/build2.png" alt="Image 2"></div> 
+        </div>
+        </div>
+    </div>
+    <div id="quality">
+        <div id="page3" class="slide slide3 reveal">
+          
+            <h2>Quality</h2>
+            <div class="page3">
+            <div class="image3"><img src="images/idea.png" alt="Image 2"></div>
+            <p class="bandal2">We uphold the highest standards of quality in manufacturing, ensuring our customers receive reliable and long-lasting LED lighting solutions.
+                Uthkal innovations is proud to have a global presence, contributing to sustainable lighting solutions on a worldwide scale.
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+        </div>
+        <section class="contact">
+            <div class="cover">
+            <div class="cont" id="call">
+               <center> <img src="images/call-cutout.png" height="100vh" width="100vw" alt=""></center><br>
+                <center><p class="mail">9900408215</p></center>
+            
+            </div>
+            <div class="cont" id="location">
+                <center> <img src="images/location-cutout.png"  height="100vh" width="100vw" alt=""></center><br>
+                <center><p class="mail">Keele muduva house </p></center>
+            
+            </div>
+            <div class="cont" id="msgg">
+                <center> <img src="images/msgg-cutout.png" height="100vh" width="100vw" alt=""></center><br>
+                <center><p class="mail">gagankeele@gmail.com</p></center>
+            
+            </div>
+        </div>
+            </section>    
+        <footer>
+            <p>&copy; 2023 [Your Company Name]. All rights reserved.</p>
+        </footer>
+    </section>    
+   
+
+
+
+
+
+
+    <script type="text/javascript">
+        function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+
+window.addEventListener('scroll',reveal);
+        function reveal(){
+            var reveals= document.querySelectorAll('.reveal');
+
+            for(var i=0; i< reveals.length;i++){
+                var windowheight = window.innerHeight;
+            var revealtop=reveals[i].getBoundingClientRect().top;
+            var revealpoint=50;
+
+            if(revealtop < windowheight-revealpoint){
+                reveals[i].classList.add('active');
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+            }
+        }
+    </script>
+</body>
+</html>
